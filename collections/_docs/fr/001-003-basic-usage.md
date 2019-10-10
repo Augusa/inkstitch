@@ -1,20 +1,19 @@
 ---
-title: "Basic Usage"
+title: "Premiers pas"
 permalink: /fr/docs/basic-usage/
 excerpt: ""
-last_modified_at: 2019-03-29
+last_modified_at: 2019-10-10
 toc: true
 ---
-Try the following steps in order to test the extension and to learn the basic functionality.
-
-**Tip:** If you are new to Inkscape, have a look at their [Basic Tutorial](https://inkscape.org/en/doc/tutorials/basic/tutorial-basic.html) first.
+Essayez les étaoes suivantes pour tester l'extension et apprendre les fonctionnalités de base.
+**Astuces:** Si vous êtes débutant avec Inkscape, jetez d'abord un coup d'oeil sur leur [Tutoriel de base](https://inkscape.org/fr/doc/tutorials/basic/tutorial-basic.html).
 {: .notice--info }
 
-## Step 1 - Draw an Object
+## Etape 1 - Dessiner un objet
 
-Create an object, e.g. a circle and make sure it has a fill.
+Créez un objet, par exemple un cercle et assurez-vous qu'il a un remplissage.
 
-![Circle with fill color](/assets/images/docs/en/basic-usage-circle-fill-color.png)
+![Cercle avec couleur de remplissage](/assets/images/docs/en/basic-usage-circle-fill-color.png)
 
 ## Step 2 - Convert to Path
 
