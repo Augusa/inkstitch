@@ -1,114 +1,108 @@
 ---
-title: "Workflow"
+title: "Organisation du travail"
 permalink: /docs/workflow/
 excerpt: ""
-last_modified_at: 2019-04-08
+last_modified_at: 2019-10-13
 toc: true
 ---
 ![Ink/Stitch workflow](/assets/images/docs/en/workflow-chart.svg)
 
-## ![Create Icon](/assets/images/docs/workflow-icon-create.png) Step 1: Create a Vector Image
+## ![Create Icon](/assets/images/docs/workflow-icon-create.png) Etape 1: Créer une image vectorielle
+Au début, vous avez besoin d’une idée ou d’une image à transférer dans un fichier de broderie. Vous pouvez le peindre à partir de zéro ou utiliser une image existante.
 
-At first you need an idea or an image that you want to transfer into an embroidery file. You can either paint it from scratch or use an existing image.
+### Dessiner avec Inkscape
 
-### Draw in Inkscape
+#### Créer des chemins
 
-#### Create Paths
+Inkscape offre des outils variés pour créer des images vectorielles. Vous pouvez, par exemple, utiliser  
+* ![dessiner des lignes à main levée](/assets/images/docs/inkscape-tools-freehand.png) dessiner des lignes à main levée (<key>P</key>)
+* ![freehand lines icon](/assets/images/docs/inkscape-tools-bezier.png) Courbes de Bézier (<key>B</key>)
 
-Inkscape offers various tools to create vector images. You can use e.g.
+Essayer aussi d'autres outils de la barre des outils. Par exemple des formes spécifiques comme 
 
-* ![freehand lines icon](/assets/images/docs/inkscape-tools-freehand.png) Freehand lines (<key>P</key>)
-* ![freehand lines icon](/assets/images/docs/inkscape-tools-bezier.png) Bezier curves (<key>B</key>)
+* ![Carré icon](/assets/images/docs/inkscape-tools-square.png) Rectangle
+* ![cercle icon](/assets/images/docs/inkscape-tools-circle.png) Cercle
+* ![polygone icon](/assets/images/docs/inkscape-tools-polygon.png) Etoile/Polygone
+* ![spirale icon](/assets/images/docs/inkscape-tools-spiral.png) Spirale
 
-Try also the other tools in the toolbar. For example specific shapes like
+#### Modifier les chemins
 
-* ![square icon](/assets/images/docs/inkscape-tools-square.png) Rectangle
-* ![circle icon](/assets/images/docs/inkscape-tools-circle.png) Circle
-* ![polygon icon](/assets/images/docs/inkscape-tools-polygon.png) Star/Polygon
-* ![spiral icon](/assets/images/docs/inkscape-tools-spiral.png) Spiral
+Modifier les objets et les chemins avec:
+* ![outil de sélection icon](/assets/images/docs/inkscape-tools-select.png) Outil de sélection (<key>S</key>) et 
+* ![outil noeud icon](/assets/images/docs/inkscape-tools-node.png) Outil d'édition de noeuds (<key>N</key>)
 
-#### Edit Paths
+Mettez à l'échelle, faites pivoter et déplacez tout l'objet avec l'outil de sélection. L'éditeur de nœuds sert à manipuler les nœuds sélectionnés, etc.
+De plus, vous pouvez utiliser les effets de chemin (`Chemin> Effets de chemin ... '). N'oubliez pas de toujours reconvertir l'objet résultant en un chemin, comme décrit ci-dessus.
 
-Edit objects and paths with:
-* ![node tool icon](/assets/images/docs/inkscape-tools-select.png) Select tool (<key>S</key>) and 
-* ![node tool icon](/assets/images/docs/inkscape-tools-node.png) Node editor tool (<key>N</key>)
 
-Scale, rotate and move the whole object with the select tool. The node editor tool serves to manipulate selected nodes, etc.
+### Utiliser une image / un graphique existant
 
-Additionally you could use path effects (`Path > Path Effects...`). Remember to always convert the resulting object back into a path as described above.
+Lorsque vous basez un dessin sur une image ou un graphique existant, chargez-le dans Inkscape dans son propre calque. Certains graphiques sont compatibles avec Inkscape [fonction de traçage automatique](https://inkscape.org/fr/doc/tutorials/tracing/tutorial-tracing.html) (`Chemin > Vectoriser une image matricielle` ou `Shift+Alt+B`), surtout si vous simplifiez d’abord l’image dans un éditeur graphique (par exemple avec[GIMP](https://www.gimp.org/)).
 
-### Use Existing Picture/Graphic
-
-When basing a design off an existing picture or graphic, load it into Inkscape in its own layer. Some graphics are amenable to Inkscape's [auto-tracing feature](https://inkscape.org/en/doc/tutorials/tracing/tutorial-tracing.html) (`Path > Trace Bitmap` or `Shift+Alt+B`), especially if you simplify the image in a graphic editor first (e.g. with [GIMP](https://www.gimp.org/)).
-
-**Tip:** If you have Linux and need to vectorize a stroke, you could make use of an other Inkscape plugin, which aims to do [centerline tracing](https://github.com/fablabnbg/inkscape-centerline-trace). For embroidery purposes it might only apply to simple shapes.
+**Astuce:** Si vous avez Linux et avez besoin de vectoriser un trait, vous pouvez utiliser un autre plugin Inkscape, qui a pour but de faire [traçage du trait d'axe](https://github.com/fablabnbg/inkscape-centerline-trace). For embroidery purposes it might only apply to simple shapes.
 {: .notice--info }
 
-After tracing, clean up the vector shapes, using `Path > Simplify` (`Ctrl+L`) and deleting nodes by hand when possible. The goal is to use as few Bezier curves as reasonably possible to represent the image.
+Après le traçage, nettoyez les formes vectorielles en utilisant `Chemin> Simplifier` (` Ctrl + L`) et en supprimant les nœuds à la main lorsque cela est possible. Le but est d’utiliser le moins de courbes de Bézier possible pour représenter l’image.
 
-When the image is needed to be traced by hand, use the freehand drawing tool. This tool creates paths with a lot of Beziér nodes, so again, simplify the curves as much as possible.
+Lorsque l’image doit être tracée à la main, utilisez l’outil de dessin à main levée. Cet outil crée des chemins avec beaucoup de noeuds de Beziér, simplifiez donc autant que possible les courbes.
 
-**Tip:** Working with an existing SVG image can save a ton of time, so consider using your search engine with image search filter set to SVG.
+**Astuce:** Travailler avec une image SVG existante peut vous faire gagner beaucoup de temps. Songez donc à utiliser votre moteur de recherche avec le filtre de recherche d'image défini sur SVG.
 {: .notice--info }
 
-### Text
+### Texte
 
-For text, choose a font carefully. It's quite hard to make satin look good when it's 1mm wide or narrower. Sans-serif fonts tend to be the easiest. For text smaller than 4mm tall, you'll have a very difficult time making lowercase letters look good, so consider block-caps. Cursive/script fonts can work well, but it's not going to be as easy as you think.
+Pour le texte, choisissez une police avec soin. Il est assez difficile de faire en sorte que le satin soit beau quand il fait 1mm de large ou moins. Les polices sans empattement ont tendance à être les plus faciles. Pour un texte de moins de 4 mm de hauteur, il vous sera très difficile de donner une belle apparence aux lettres minuscules. Par conséquent, considérez les majuscules. Les polices Cursive / Script peuvent bien fonctionner, mais ce ne sera pas aussi facile que vous le pensez.
 
+## ![Vectorize](/assets/images/docs/workflow-icon-vectorize.png) Etape 2: Convertir en vecteur de broderie et paramétrer
 
-## ![Vectorize](/assets/images/docs/workflow-icon-vectorize.png) Step 2: Convert to Embroidery Vectors & Parametrize
+À ce stade, vous aurez une représentation graphique vectorielle de votre image. La prochaine chose à faire est de convertir vos vecteurs en un type compris par Ink / Stitch.
 
-At this point, you'll have a vector graphic representation of your image. The next thing to do is to convert your vectors into the kind that Ink/Stitch understands.
+### Le dialogue Objets
 
-### The Object Panel
+Nous vous recommandons de faire un usage intensif des calques et des groupes à ce stade.
 
-We recommend to make heavy use of layers and groups at this point.
+Dans le panneau des objets (ouvert avec <key>Ctrl</key><key>Shift</key><key>O</key>, vous pouvez gérer des calques, des groupes et des objets.
+Vous pouvez enregistrer l'image d'origine en dupliquant le calque:
 
-In the object panel (open with <key>Ctrl</key><key>Shift</key><key>O</key>) you can manage layers, groups and objects.
+* Faites un clic droit sur le calque (si vous n'avez pas renommé le calque, il s'appellera `Calque 1`)
+* Cliquez sur `Dupliquer`
+* Fermez l'oeil en cliquant dessus.
 
-You can save the original image by duplicating the layer:
+Cela rendra le premier calque invisible. Tout calque, groupe ou forme vectorielle défini comme invisible sera ignoré par Ink/ Stitch. Nous allons maintenant travailler avec la copie.
+![Dialogue objet](/assets/images/docs/en/objects-panel.png)
 
-* Right click on the layer (if you didn't rename the layer it will be called `Layer 1`)
-* Click on `Duplicate`
-* Close the eye by clicking on it.
+### Groupes
 
-This will make the first layer invisible. Any layer, group, or vector shape that is set invisible will be ignored by Ink/Stitch. We will now work with the copy.
+Utilisez des groupes pour structurer votre document:
 
-![Objects panel](/assets/images/docs/en/objects-panel.png)
+* Sélectionnez des objets avec votre souris
+* Ajouter ou supprimer des objets avec <key>shift</key><key>click</key>
+* Appuyez sur <key>Ctrl</key><key>G</key>
 
-### Groups
+Grouper des objets fonctionne comme suit:
+*Sélectionnez le(s) groupe(s)
+* Appuyez sur <key>Ctrl</key><key>Shift</key><key>G</key>
 
-Use groups to structure your document:
+### Convertir en chemin
 
-* Select objects with your mouse
-* Add or remove objects with <key>shift</key><key>click</key>
-* Hit <key>Ctrl</key><key>G</key>
+Transformez ** tous les objets ** que vous souhaitez broder en chemins:
 
-Ungrouping objects works as follows:
+* Sélectionner tous les objets (`Ctrl+A`)
+* Cliquer sur ![convertir en chemin](/assets/images/docs/inkscape-tools-convert-to-path.png) ou appuyer <key>Ctrl</key><key>Alt</key><key>C</key>.
 
-* Select the group(s)
-* Hit <key>Ctrl</key><key>Shift</key><key>G</key>
-
-### Convert to Path
-
-Transform **all objects** you want to stitch to paths:
-
-* Select all objects (`Ctrl+A`)
-* Click on ![convert to path](/assets/images/docs/inkscape-tools-convert-to-path.png) or hit <key>Ctrl</key><key>Alt</key><key>C</key>.
-
-**Info:** Objects that are not of "path" type, are ignored by Ink/Stitch.
+**Info:**Les objets qui ne sont pas de type "chemin" sont ignorés par Ink/Stitch.
 {: .notice--warning }
 
-### Stitch Types
+### Types de point
 
-Ink/Stitch offers various stitch types. Depending on which stitch type you are willing to use, you have to set the fill color, or stroke parameters with `Object > Fill and Stroke...` (<key>Ctrl</key><key>Shift</key><key>F</key>).
+Ink/Stitch propose différents types de points. Selon le type de point que vous souhaitez utiliser, vous devez définir la couleur de remplissage ou les paramètres de trait avec`Objet > Fond et forme...` (<key>Ctrl</key><key>Shift</key><key>F</key>).
 
-Have a look at this table and follow the links to understand how to create a specific stitch type:
+Regardez ce tableau et suivez les liens pour comprendre comment créer un type de point spécifique:
 
-Path Object | Stitch Type
+Objet chemin | Type de point
 ---|---|---
-(Dashed) stroke |[running stitch](/docs/stitches/running-stitch/), [manual stitch](/docs/stitches/manual-stitch/), [zig-zag stitch](/docs/stitches/zigzag-stitch/), [bean stitch](/docs/stitches/bean-stitch/)
-Two combined strokes (with optional rungs) | [satin column](/docs/stitches/satin-column), [e-stitch](/docs/stitches/e-stitch)
+Trait(pointillé) |[point droit](/docs/stitches/running-stitch/), [point manuel](/docs/stitches/manual-stitch/), [point zig-zag](/docs/stitches/zigzag-stitch/), [point triple](/docs/stitches/bean-stitch/)
+Deux traits combinés (avec échelons optionnels) | [colonne satin](/docs/stitches/satin-column), [e-stitch](/docs/stitches/e-stitch)
 Closed path with a fill color | [fill stitch](/docs/stitches/fill-stitch/)
 {: .equal-tables }
 
